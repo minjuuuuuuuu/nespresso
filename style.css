@@ -1,0 +1,1819 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Lexend', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    scroll-behavior: smooth;
+    /*탑버튼누르면 천천히 올라감*/
+}
+
+ul,
+li {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+figure {
+    width: fit-content;
+    height: fit-content;
+}
+
+html {
+    font-size: 15px;
+    /* 폰트사이즈 기준 */
+}
+
+/* font-size: rem,em  - rem을 써주는 게 좋을 것 */
+h1 {
+    font-size: 0;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+header .head {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .head .hlogo {
+    margin-top: 7px;
+    flex-basis: 15%;
+    text-align: center;
+}
+
+header .head .hlogo>a img {
+    max-width: 100%;
+}
+
+header .head .hlogo a {
+    display: block;
+    margin: auto;
+}
+
+header .head .menu {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+}
+
+header .head .menu li {
+    flex-basis: 18%;
+    box-sizing: border-box;
+    font-weight: 500;
+    display: block;
+}
+header .head .menu li>a{
+    display: block;
+}
+header .head .menu li:hover{
+    color: #9e906c;
+}
+nav {
+    width: 100%;
+    min-height: 250px;
+    background-color: #0D0D0D;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    color: #fff;
+    z-index: 98;
+}
+nav .navbox .submenu li>a{
+    display: block;
+} 
+nav .navbox .submenu li:hover{
+    color: #9e906c;
+}
+nav .navI {
+    /* flex-basis: 40%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .navI .xbox {
+    flex-basis: 15%;
+}
+
+nav .navI .xxbox {
+    flex-basis: 20%;
+}
+
+nav .navI .navbox {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .navI .navbox li {
+    flex-basis: 18%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* 아이콘 */
+header .head .icon {
+    flex-basis: 20%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .head .icon .iconbox {
+    width: 30%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .head .icon .iconbox a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+header .head .icon .iconbox a:hover{
+    background-color: #9e906c;
+}
+
+header .head .icon .iconbox a i:nth-child(2) {
+    margin-left: 10px;
+}
+
+header .head .icon .iconbox a:nth-child(2) i {
+    margin-top: 6px;
+}
+
+header .head .icon form {
+    width: 60%;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    float: right;
+}
+
+header .head .icon form input[type="text"] {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #0D0D0D;
+    outline: none;
+    color: #fff;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+header form a>i {
+    float: right;
+    margin: 7.5px 0;
+    margin-right: 10px;
+    color: #fff;
+    display: block;
+}
+
+/* //header */
+
+/* main */
+main {
+    width: 100%;
+    /* height: 100vh; */
+    min-height: 860px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.videobox {
+    width: 100%;
+    min-width: 100%;
+    height: 900px;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+}
+
+/* //main */
+
+/* section01 */
+#section1 {
+    width: 100%;
+    overflow: hidden;
+    margin: 15rem auto;
+}
+
+#section1 .birth {
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#section1 .birth .btext {
+    width: 60%;
+    /* 1140px */
+    height: 50%;
+    margin: auto;
+    padding-top: 150px;
+    color: #fff;
+}
+
+#section1 .birth .btext span {
+    font-size: 1.3rem;
+}
+
+#section1 .birth .btext h2 {
+    padding-top: 0.6rem;
+    padding-bottom: 5rem;
+    font-weight: 700;
+}
+
+#section1 .birth .btext p {
+    line-height: 2rem;
+}
+
+#section1 .birth .bbox {
+    display: block;
+    width: 270px;
+    height: 270px;
+    background-color: #000000a3;
+    position: absolute;
+    left: 67.11%;
+    bottom: 0;
+}
+
+#section1 .birth .bbox .imgbox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+#section1 .birth .bbox .imgbox img {
+    float: right;
+    margin-bottom: 1rem;
+}
+
+#section1 .birth .bbox .imgbox span {
+    color: #fff;
+    font-size: 0.7rem;
+    display: block;
+    float: right;
+}
+#section1 .birth .bbox .imgbox span:hover{
+    color: #9e906c;
+}
+
+#section1 .box {
+    width: 81.32%;
+    /* width: 1545px; */
+    height: 170px;
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1 .box h2 {
+    margin-right: 23rem;
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+#section1 .box h2:hover{
+    color: #9e906c;
+}
+
+#section1 .sus {
+    width: 81.32%;
+    /* width: 1545px; */
+    height: 270px;
+    float: right;
+    position: relative;
+}
+
+#section1 .sus .sbox {
+    display: block;
+    width: 270px;
+    height: 270px;
+    background-color: #000000a3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 88;
+}
+
+#section1 .sus .sbox .imgboxx {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+#section1 .sus .sbox .imgboxx img {
+    margin-bottom: 1rem;
+}
+
+#section1 .sus .sbox .imgboxx span {
+    color: #fff;
+    font-size: 0.8rem;
+    display: block;
+    float: right;
+}
+#section1 .sus .sbox .imgboxx span:hover{
+    color: #9e906c;
+}
+#section1 .sus .susbox {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section1 .sus .susbox .imgboxxx {
+    width: 75%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 270px;
+}
+
+#section1 .sus .susbox .imgboxxx h2 {
+    padding-left: 100px;
+}
+
+#section1 .sus .susbox .imgboxxx p {
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+/* //section01 */
+
+/* section02 */
+#section2 {
+    margin-bottom: 15rem;
+}
+
+#section2 .s2title {
+    text-align: center;
+}
+
+#section2 .s2title img {
+    width: 16.67%;
+    /* width: 190px; */
+    margin: auto;
+}
+
+#section2 .s2title h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+#section2 .machine .row {
+    margin: 10rem 0;
+}
+
+#section2 .machine .row .hov:hover {
+    opacity: 1;
+}
+
+#section2 .capsule .row .hov:hover {
+    opacity: 1;
+}
+#section2 .machine .row .hov {
+    opacity: 0.4;
+}
+
+#section2 .capsule .row .hov {
+    opacity: 0.4;
+}
+
+#section2 .machine .stext01 {
+    width: 100%;
+    height: 210px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+#section2 .machine .stext01 p {
+    width: 55%;
+    border: 1px solid #000;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#section2 .machine .stext01 h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+#section2 .machine .stext01 span {
+    display: block;
+    color: #737373;
+    font-size: 1rem;
+}
+
+#section2 .capsule .stext02 {
+    margin: 1rem 0;
+}
+
+#section2 .capsule .stext02 figure {
+    float: right;
+}
+
+#section2 .capsule .stext02 p {
+    width: 55%;
+    border: 1px solid #000;
+    border-radius: 50px;
+    text-align: center;
+    float: right;
+}
+
+#section2 .capsule .stext02 h3 {
+    float: right;
+    text-align: right;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+#section2 .capsule .stext02 span {
+    display: block;
+    float: right;
+    text-align: right;
+    color: #737373;
+}
+
+/* //section02 */
+
+/* section03 */
+#section3 {
+    width: 100%;
+    height: 900px;
+    background-color: #0D0D0D;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+#section3 .title figure {
+    width: 10.53%;
+    min-width: 190px;
+    /* width: 200px; */
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+#section3 .title h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+#section3 .sec3box {
+    width: 100%;
+    height: 50vw;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -8rem;
+}
+
+#section3 .sec3box .slide {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+#section3 .sec3box .slide .card {
+    width: 300px;
+    height: 400px;
+    margin: 0 1rem;
+    position: relative;
+    perspective: 500px;
+    cursor: pointer;
+}
+.slick-list{
+    padding: 55px 0;
+}
+
+/* 카드 앞면 */
+#section3 .sec3box .slide .card .card-front {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    perspective: 0;
+    transition: 0.8s;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    transform: rotateY(0deg);
+    border-radius: 20px;
+    border: 5px solid #9e906c;
+}
+#section3 .sec3box .slide .card:hover .card-front{
+    transform: rotateY(180deg);
+}
+
+#section3 .sec3box .slide .card .card-front .circle {
+    width: 40px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #9e906c;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+#section3 .sec3box .slide .card .card-front figure {
+    margin: 4rem auto;
+}
+
+#section3 .sec3box .slide .card .card-front p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#section3 .sec3box .slide .card .card-front span {
+    display: block;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #737373;
+}
+
+/* 카드 뒷면 */
+#section3 .sec3box .slide .card .card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    perspective: 0;
+    transition: 0.8s;
+    display: block;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    background-color: #fff;
+    border-radius: 20px;
+    border: 5px solid #9e906c;
+}
+#section3 .sec3box .slide .card:hover .card-back{
+    transform: rotateY(0deg);
+}
+
+#section3 .sec3box .slide .card .card-back .circle {
+    width: 40px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #9e906c;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+#section3 .sec3box .slide .card .card-back p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#section3 .sec3box .slide .card .card-back figure {
+    margin: 3.5rem auto;
+}
+
+#section3 .sec3box .slide .card .card-back span {
+    display: block;
+    width: 80%;
+    margin: auto;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #737373;
+}
+
+#section3 .sec3box .slide .card .card-back figure.fig {
+    margin: 1.5rem auto;
+    margin-bottom: 3rem;
+}
+
+#section3 .sec3box .slide .card:nth-child(2n+1) {
+    margin-top: 4rem;
+}
+
+
+
+
+/* //section03 */
+
+/* section04 */
+#section4 {
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+}
+
+#section4 h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10rem 0;
+    text-align: center;
+}
+
+#section4 .project .left .ibox iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+#section4 .project .right {
+    margin: 5rem 0;
+}
+
+#section4 .project .right h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+#section4 .project .right p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    width: 70%;
+}
+
+#section4 .project .right span {
+    display: block;
+    color: #737373;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 75%;
+}
+
+#section4 .project .right button {
+    width: 25%;
+    background-color: #0D0D0D;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 0.2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+#section4 .project .right button:hover {
+    background-color: #9e906c;
+}
+
+/* //section04 */
+
+/* section05 */
+#section5 {
+    width: 100%;
+    height: 572px;
+    background-color: aliceblue;
+}
+
+#section5 .banner1 {
+    width: 100%;
+    height: 336px;
+    overflow: hidden;
+}
+
+#section5 .banner1 .l1 {
+    width: 60.26%;
+    /* width: 1145px; */
+    height: 100%;
+    float: left;
+    position: relative;
+    background-image: url(../img/b1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section5 .banner1 .l1 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, -50%);
+    line-height: 4rem;
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: 'Lexend', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#section5 .banner1 .r1 {
+    width: 39.74%;
+    height: 100%;
+    float: left;
+    background-color: #0D0D0D;
+}
+
+#section5 .banner1 .r1 .rtext {
+    width: 50%;
+    overflow: hidden;
+    text-align: right;
+    margin: 7rem 0;
+}
+
+#section5 .banner1 .r1 .rtext p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#section5 .banner1 .r1 .rtext button {
+    width: 100px;
+    padding: 0.2rem 0;
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#section5 .banner1 .r1 .rtext button:hover {
+    background-color: #9e906c;
+    border: none;
+}
+
+#section5 .banner2 {
+    width: 100%;
+    height: 236px;
+}
+
+#section5 .banner2 .l2 {
+    width: 38.16%;
+    height: 100%;
+    background-color: #0D0D0D;
+    float: left;
+    border-bottom: 1px solid #555;
+}
+
+#section5 .banner2 .l2 .ltext {
+    width: 50%;
+    overflow: hidden;
+    margin: 7rem 0;
+}
+
+#section5 .banner2 .r2 {
+    width: 61.84%;
+    height: 100%;
+    float: left;
+    background-image: url(../img/b2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-x: right;
+}
+
+#section5 .banner2 .l2 .ltext {
+    width: 50%;
+    overflow: hidden;
+    margin: 4rem 0;
+    padding-left: 3rem;
+    float: right;
+}
+
+#section5 .banner2 .l2 .ltext p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#section5 .banner2 .l2 .ltext button {
+    width: 100px;
+    padding: 0.2rem 0;
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#section5 .banner2 .l2 .ltext button:hover {
+    background-color: #9e906c;
+    border: none;
+}
+
+#section5 .banner2 .r2 p {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    line-height: 4rem;
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: 'Lexend', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* //section05 */
+/* footer */
+footer {
+    width: 100%;
+    overflow: hidden;
+    background-color: #0D0D0D;
+    position: relative;
+}
+
+footer .menubox {
+    /* width: 61.58%; */
+    /* overflow: hidden; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+footer .menubox .menu {
+    margin-top: 2rem;
+}
+
+footer .menubox .menu .me {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+footer .menubox .menu li {
+    /* width: 21.37%; */
+    /* width: 250px; */
+    color: #fff;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+footer .menubox .menu li span {
+    display: block;
+    color: #737373;
+    line-height: 1.3rem;
+    padding-left: 1rem;
+}
+
+footer .line {
+    width: 85%;
+    height: 1px;
+    margin: auto;
+    background-color: #555;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .ffoot {
+    /* width: 61.58%; */
+    overflow: hidden;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .ffoot p {
+    color: #fff;
+    font-weight: 300;
+}
+
+/* //footer */
+
+.topbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: #858585;
+    font-weight: 500;
+    border: 1px solid #858585;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    cursor: pointer;
+}
+.topbtn:hover{
+    background-color: #9e906c8d;
+    color: #fff;
+    border: none;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    header .head .hlogo {
+        min-width: 160px;
+    }
+
+    header .head .icon form {
+        display: none;
+    }
+
+    header .head .icon {
+        flex-basis: 20%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .head .icon .iconbox {
+        width: 40%;
+    }
+
+    main {
+        width: 100%;
+        height: 400px;
+        min-height: 700px;
+        overflow: hidden;
+    }
+
+    .video {
+        position: absolute;
+        top: 0;
+        left: -25%;
+    }
+
+    #section1 {
+        margin-top: 2rem;
+    }
+
+    #section1 .birth .btext {
+        margin: auto;
+        margin-left: 5rem;
+    }
+
+    #section1 .birth .bbox {
+        display: block;
+        width: 270px;
+        height: 270px;
+        background-color: #000000a3;
+        position: absolute;
+        left: 76%;
+        bottom: 0;
+    }
+
+    #section1 .sus .susbox .imgboxxx {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #section1 .sus .susbox .imgboxxx h2 {
+        padding-left: 0px;
+    }
+
+    #section3 .sec3box {
+        height: 50vw;
+        margin-top: 0rem;
+    }
+
+    #section4 .project .right p {
+        font-size: 1.2rem;
+    }
+
+    #section5 .banner1 {
+        position: relative;
+    }
+
+    #section5 .banner1 .l1 {
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+
+    #section5 .banner1 .l1 p {
+        display: none;
+    }
+
+    #section5 .banner1 .r1 {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        float: none;
+        background-color: transparent;
+    }
+
+    #section5 .banner2 {
+        position: relative;
+    }
+
+    #section5 .banner2 .l2 {
+        background-color: transparent;
+        float: none;
+        border-bottom: none;
+        position: absolute;
+        top: 0;
+        left: 100px;
+        z-index: 77;
+    }
+
+    #section5 .banner2 .l2 .ltext {
+        width: 50%;
+        overflow: hidden;
+        margin: 7rem 0;
+    }
+
+    #section5 .banner2 .r2 {
+        width: 100%;
+        height: 100%;
+        float: none;
+        position: relative;
+    }
+
+    #section5 .banner2 .l2 .ltext {
+        width: 50%;
+        overflow: hidden;
+        margin: 4rem 0;
+        padding-left: 3rem;
+        float: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #section5 .banner2 .l2 .ltext p {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #section5 .banner2 .r2 p {
+        display: none;
+    }
+    #section5 .banner2 .l2 .ltext button:hover {
+        background-color: #0D0D0D;
+    }
+    #section5 .banner1 .r1 .rtext button:hover {
+        background-color: #0D0D0D;
+    }
+    .topbtn{
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+    }
+
+
+}
+
+@media screen and (max-width:991px) {
+
+    header .head {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .head .hlogo {
+        min-width: 160px;
+        margin-top: 7px;
+        flex-basis: 15%;
+        text-align: center;
+    }
+
+    header .head .menu {
+        padding-left: 0rem;
+        font-size: 0.8rem;
+    }
+
+    header .head .hlogo a {
+        display: block;
+        margin: auto;
+        font-size: 0.5rem;
+    }
+
+    header .head .icon {
+        justify-content: center;
+    }
+
+    header .head .icon .iconbox {
+        width: 50%;
+    }
+    nav .navI .xxbox{
+        flex-basis: 10%;
+    }
+    nav .navI .navbox{
+        flex-basis: 55%;
+    }
+
+    main {
+        height: 100px;
+        min-height: 660px;
+    }
+
+    #section1 {
+        margin-top: 0.5rem;
+    }
+
+    #section1 .birth .bbox {
+        background-color: transparent;
+        position: absolute;
+        left: 68%;
+        bottom: 0;
+    }
+
+    #section1 .box {
+        position: relative;
+    }
+
+    #section1 .box h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #section1 .sus {
+        width: 81.32%;
+        /* width: 1545px; */
+        height: 270px;
+        float: right;
+        position: relative;
+    }
+
+    #section1 .sus .sbox {
+        display: none;
+    }
+
+    #section1 .sus .susbox {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #section1 .sus .susbox .imgboxxx {
+        width: 100%;
+        justify-content: space-evenly;
+        padding-left: 0px;
+    }
+
+    #section1 .sus .susbox .imgboxxx h2 {
+        padding-left: 0px;
+    }
+
+    /* section2 */
+    #section2 .machine .stext01 p {
+        width: 20%;
+    }
+
+    #section2 .machine .stext01 h3 {
+        width: 100%;
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    #section2 .machine .stext01 span {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #section2 .capsule .stext02 {
+        order: -1;
+    }
+
+    #section2 .capsule .stext02 figure {
+        float: none;
+    }
+
+    #section2 .capsule .stext02 p {
+        float: none;
+        width: 20%;
+    }
+
+    #section2 .capsule .stext02 h3 {
+        float: none;
+        text-align: center;
+    }
+
+    #section2 .capsule .stext02 span {
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #section3 .sec3box {
+        height: 80vw;
+    }
+
+    #section3 .sec3box .slide {
+        margin-top: -5rem;
+    }
+
+    #section3 .sec3box .slide .card:nth-child(2n+1) {
+        margin-top: 0;
+    }
+
+    #section4 {
+        height: 90%;
+    }
+
+    #section4 h2 {
+        margin: 5rem 0;
+    }
+
+    #section4 .project .left .ibox iframe {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #section4 .project .right {
+        margin: 8rem 0;
+    }
+
+    #section4 .project .right h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    #section4 .project .right p {
+        width: 100%;
+    }
+
+    #section4 .project .right span {
+        width: 100%;
+    }
+
+    #section4 .project .right button {
+        width: 30%;
+        display: block;
+        float: right;
+        padding: 0.4rem 0;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    /*banner*/
+    #section5 .banner1 .l1 {
+        background-size: cover;
+    }
+    #section5 .banner1 .r1 .rtext {
+        width: 70%;
+    }
+
+    #section5 .banner2 .l2 .ltext {
+        width: 100%;
+    }
+
+    #section5 .banner2 .l2 .ltext p {
+        width: 100%;
+    }
+
+    #section5 .banner2 .r2 {
+        background-position-x: right;
+    }
+}
+
+@media screen and (max-width:767px) {
+    header .head {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .head .hlogo {
+        margin-right: 3rem;
+    }
+
+    header .head .menu {
+        margin-right: 3rem;
+    }
+    header .head .menu li{
+        flex-basis: 40%;
+    }
+
+    header .head .icon {
+        margin-right: -9rem;
+    }
+    nav .navbox .submenu{
+        width: 110px;
+    }
+    main{
+        min-height: 450px;
+    }
+    #section1 .birth .bbox {
+        background-color: transparent;
+        position: absolute;
+        left: 60%;
+        bottom: 0;
+    }
+
+    #section1 .box h2 {
+        font-size: 3rem;
+    }
+
+    #section1 .sus .susbox .imgboxxx h2 {
+        font-size: 1.5rem;
+    }
+
+    #section2 .machine .stext01 p {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    #section2 .machine .stext01 h3 {
+        width: 80%;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    #section2 .machine .stext01 span {
+        text-align: left;
+        padding: 5px 0;
+    }
+
+
+    #section2 .capsule .stext02 p {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    #section2 .capsule .stext02 h3 {
+        width: 50%;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    #section2 .capsule .stext02 span {
+        text-align: left;
+        padding: 5px 0;
+    }
+
+    #section3 .sec3box {
+        margin-top: 10rem;
+    }
+
+    #section3 .sec3box .slide {
+        margin-top: -5rem;
+    }
+
+    #section3 .sec3box .slide {
+        width: 90%;
+    }
+
+    #section4 .project .right span {
+        width: 70%;
+    }
+
+    #section5 .banner1 .l1 {
+        background-position-x: center;
+    }
+
+    #section5 .banner2 .l2 .ltext p {
+        width: 100%;
+        margin-left: -3rem;
+    }
+
+    #section5 .banner2 .l2 .ltext button {
+        margin-left: -3rem;
+    }
+    footer .menubox .menu .me{
+        font-size: 0.8rem;
+    }
+    footer .menubox .menu .nu{
+        display: none;
+    }
+}
+/*  //////////////////////////////////////////////////   */
+@media screen and (max-width:575px) {
+    header .head .menu {
+        display: none;
+    }
+
+    header .head .icon {
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        height: 80px;
+    }
+    header .ham {
+        width: 80px;
+        height: 80px;
+        padding: 14px 25px;
+        float: right;
+    }
+    header .ham .line {
+        width: 30px;
+        height: 3px;
+        margin: 7px 0;
+        background-color: #fff;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        height: 300px;
+        min-height: 300px;
+    }
+    main .videobox{
+        height: 50vh;
+    }
+    main video{
+        top: 78px;
+    }
+
+    header .ham .line {
+        width: 40px;
+        height: 4px;
+        margin: 10px 0;
+        background-color: #fff;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+
+    main{
+        min-height: 400px;
+    }
+    #section1 {
+        margin: 2rem auto;
+    }
+    #section1 .birth {
+        width: 100%;
+        height: 540px;
+        overflow: hidden;
+        background-image: url(../img/bg1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    #section1 .birth .btext {
+        width: 60%;
+        /* 1140px */
+        height: 50%;
+        margin: 0 6rem;
+        padding-top: 150px;
+        color: #fff;
+    }
+
+    #section1 .birth .btext span {
+        font-size: 1.1rem;
+    }
+
+    #section1 .birth .btext h2 {
+        font-size: 1.5rem;
+    }
+
+    #section1 .birth .btext p {
+        width: 110%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #section1 .birth .bbox {
+        position: absolute;
+        left: 50%;
+    }
+
+    #section1 .box {
+        width: 70%;
+        height: 140px;
+    }
+    #section1 .box h2 {
+        font-size: 2rem;
+    }
+    #section1 .sus{
+        height: 180px;
+    }
+    #section1 .sus .susbox{
+        height: 180px;
+    }
+    #section1 .sus .susbox .imgboxxx h2 {
+        display: none;
+    }
+    #section1 .sus .susbox .imgboxxx p{
+        font-size: 0.8rem;
+    }
+    #section2{
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+    }
+    #section2 .machine{
+        margin-top: -3rem;
+    }
+    #section3 .sec3box{
+        width: 100%;
+    }
+    #section3 .sec3box .slide {
+        width: 60%;
+        margin-top: 2rem;
+    }
+    #section4 .project .right p{
+        width: 82%;
+    }
+    #section5 .banner1 .r1 {
+        width: 50%;
+    }
+    #section5 .banner1 .r1 .rtext{
+        width: 100%;
+        padding-right: 2rem;
+    }
+    #section5 .banner2 .l2{
+        left: 3rem;
+        width: 50%;
+    }
+    .topbtn{
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        font-size: 0.5rem;
+        right: 50px;
+        bottom: 50px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header{
+        width: 100%;
+        height: 80px;
+    }
+    header .ham {
+        width: 80px;
+        height: 80px;
+        float: right;
+        padding: 20px 25px;
+    }
+    header .ham .line {
+        width: 30px;
+        height: 3px;
+        margin: 7px 0;
+        background-color: #fff;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    header .head .hlogo>a img {
+        max-width: 80%;
+    }
+    main{
+        height: 250px;
+        margin-bottom: -10rem;
+    }
+    main video{
+        top: 80px;
+    }
+    #section1{
+        margin-bottom: 5rem;
+    }
+    #section1 .birth {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        background-image: url(../img/bg1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    #section1 .birth .btext {
+        margin: 0 4rem;
+        padding-top: 5rem;
+    }
+
+    #section1 .birth .btext span {
+        font-size: 1.1rem;
+    }
+
+    #section1 .birth .btext p {
+        width: 130%;
+        font-size: 0.8rem;
+        padding-top: -3rem;
+    }
+    #section1 .birth .bbox {
+        position: absolute;
+        left: 30%;
+        max-width: 70%;
+    }
+
+    #section1 .box {
+        width: 80%;
+        height: 100px;
+    }
+    #section1 .sus .susbox{
+        height: 150px;
+    }
+    #section1 .sus .susbox .imgboxxx p{
+        font-size: 0.7rem;
+        line-height: 1.3rem;
+    }
+    #section2{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #section2 .machine .row{
+        margin: 3rem 0;
+    }
+    #section2 .machine .stext01{
+        padding: 0.5rem;
+    }
+    #section2 .machine .stext01>figure{
+        max-width: 90px;
+        /* display: none; */
+    }
+    #section2 .machine .stext01 p {
+        width: 60%;
+        font-size: 0.6rem;
+        margin-top: -0.5rem;
+    }
+
+    #section2 .machine .stext01 h3 {
+        width: 70%;
+        font-size: 1rem;
+        margin-top: -0.5rem;
+        text-align: left;
+    }
+
+    #section2 .machine .stext01 span {
+        font-size: 0.7rem;
+    }
+
+    #section2 .capsule .stext01{
+        padding: 0.5rem;
+    }
+    #section2 .capsule .stext02>figure{
+        max-width: 90px;
+        /* display: none; */
+    }
+    #section2 .capsule .stext02 p {
+        width: 60%;
+        font-size: 0.6rem;
+        margin-top: -0.5rem;
+    }
+
+    #section2 .capsule .stext02 h3 {
+        width: 70%;
+        font-size: 1rem;
+        margin-top: -0.5rem;
+        text-align: left;
+    }
+
+    #section2 .capsule .stext02 span {
+        text-align: left;
+        padding: 5px 0;
+        font-size: 0.7rem;
+    }
+
+    #section3 {
+        width: 100%;
+        height: 75vh;
+        background-color: #0D0D0D;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+    
+    #section3 .title figure {
+        min-width: 120px;
+    }
+    #section3 .title h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 2rem;
+    }
+    #section3 .sec3box {
+        width: 100%;
+        height: 120vw;
+        margin-top: 2rem;
+    }
+    
+    #section3 .sec3box .slide {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        margin-top: -1rem;
+    }
+
+    #section4 h2 {
+        font-size: 1rem;
+        margin: 5rem 0;
+    }
+    #section4 .project .left .ibox{
+        height: 35vh;
+    }
+    #section4 .project .left .ibox iframe{
+        height: 35vh;
+    }
+    #section4 .project .right{
+        margin: 4rem 0;
+    }
+    #section4 .project .right h3{
+        font-size: 2rem;
+    }
+    #section4 .project .right p {
+        font-size: 1.2rem;
+        width: 75%;
+    }
+    #section4 .project .right span {
+        width: 90%;
+    }
+    #section4 .project .right button {
+        width: 25%;
+        font-size: 0.8rem;
+    }
+    #section5{
+        height: 400px;
+    }
+    #section5 .banner1{
+        height: 200px;
+    }
+    #section5 .banner1 .r1 .rtext{
+        padding-right: 2rem;
+        margin: 3.5rem 0;
+    }
+    #section5 .banner1 .r1 .rtext p{
+        font-size: 1rem;
+    }
+    #section5 .banner1 .r1 .rtext button{
+        font-size: 0.8rem;
+        width: 40%;
+        margin-top: -1rem;
+    }
+    #section5 .banner2{
+        height: 200px;
+    }
+    #section5 .banner2 .l2 .ltext p{
+        font-size: 1rem;
+    }
+    #section5 .banner2 .l2 .ltext button{
+        font-size: 0.8rem;
+        width: 40%;
+        margin-top: -1rem;
+    }
+    footer .ffoot p{
+        font-size: 0.7rem;
+    }
+}
